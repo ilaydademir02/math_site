@@ -1,0 +1,10 @@
+{
+  "title": "[Paper Title]",
+  "authors": "[Your Name], [Coauthor Name]",
+  "venue": "[Journal or Conference Name]",
+  "year": "2025",
+  "doi": "10.0000/example",
+  "arxiv": "https://arxiv.org/abs/0000.00000",
+  "pdf": "/papers/paper-one.pdf",
+  "abstract": "This is placeholder abstract text. Replace it with a short summary of the paper's main result, e.g. we establish [main result] for [class of objects], extending earlier work of [Author] under weaker hypotheses on [X]."
+}

@@ -1,0 +1,75 @@
+@import "katex/dist/katex.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --grid-line: rgba(26, 34, 51, 0.06);
+}
+.dark {
+  --grid-line: rgba(231, 229, 221, 0.06);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink dark:bg-night-bg dark:text-night-text antialiased;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+::selection {
+  @apply bg-accent/20;
+}
+
+:focus-visible {
+  outline: 2px solid theme("colors.accent.DEFAULT");
+  outline-offset: 2px;
+}
+
+.grid-backdrop {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+}
+
+/* Mathematical environments (definition / theorem / proposition / lemma / proof / example) */
+.math-env {
+  @apply my-6 rounded-sm border border-line bg-white/60 px-5 py-4 dark:border-night-line dark:bg-night-surface/60;
+}
+.math-env-label {
+  @apply mb-1 block font-mono text-xs uppercase tracking-widest text-accent dark:text-accent-soft;
+}
+.math-env-title {
+  @apply font-serif italic text-ink dark:text-night-text;
+}
+.math-env.proof {
+  @apply border-l-2 border-ink/30 bg-transparent pl-5 dark:border-night-soft/30;
+}
+.math-env.proof .math-env-label {
+  @apply text-ink-faint dark:text-night-soft;
+}
+.math-env.proof::after {
+  content: "\25a1";
+  display: block;
+  text-align: right;
+  margin-top: 0.5rem;
+  color: theme("colors.ink.faint");
+}
+
+/* KaTeX overflow handling on small screens */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+.prose :where(h1, h2, h3, h4) {
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+.prose {
+  @apply dark:prose-invert;
+}
