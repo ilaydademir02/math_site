@@ -1,9 +1,36 @@
-{
-  "title": "[Second Paper Title]",
-  "authors": "[Your Name]",
-  "venue": "[Preprint]",
-  "year": "2024",
-  "arxiv": "https://arxiv.org/abs/0000.00001",
-  "pdf": "/papers/paper-two.pdf",
-  "abstract": "Placeholder abstract for a second paper or preprint. Describe the setting, the main theorem, and one sentence on the proof technique or motivation."
-}
+## Research Interests
+
+[Research Area 1] · [Research Area 2] · [Research Area 3]
+
+Broadly, I am interested in [describe your general mathematical interests — e.g. the interplay between analysis and geometry, or structure in combinatorial objects].
+
+## Current Research
+
+I am currently working on [brief description of current project]. A representative question in this direction concerns objects of the form
+
+$$
+\int_M e^{-f}\,d\mu
+$$
+
+where $M$ is [describe $M$] and $f$ is [describe $f$]. One of the central difficulties is [describe difficulty].
+
+## Selected Problems
+
+- **[Problem 1 name].** [One or two sentence description.]
+- **[Problem 2 name].** [One or two sentence description.]
+- **[Problem 3 name].** [One or two sentence description.]
+
+For instance, a model equation of interest is the reaction–diffusion equation
+
+$$
+\partial_t u = \Delta u + F(u).
+$$
+
+## Collaborations
+
+- [Collaborator name], [Institution] — [one-line description of the joint project].
+- [Collaborator name], [Institution] — [one-line description of the joint project].
+
+## Future Directions
+
+[A short paragraph on where you see this research heading over the next few years — natural next questions, applications, or techniques you want to develop.]

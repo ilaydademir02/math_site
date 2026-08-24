@@ -1,0 +1,46 @@
+---
+title: "Compactness and Continuity: A Quick Note"
+date: "2026-01-15"
+summary: "A short expository note recalling the basic relationship between compactness and continuous functions on metric spaces."
+tags: ["analysis", "topology", "expository"]
+---
+
+This is a sample note showing the kind of mathematical writing this section supports — definitions, theorems, and proofs, all typeset with LaTeX via KaTeX. Replace or delete this file once you've added your own notes.
+
+<Definition title="Compact metric space">
+
+A metric space $(X, d)$ is **compact** if every open cover of $X$ admits a finite subcover. Equivalently, $(X,d)$ is compact if and only if it is complete and totally bounded.
+
+</Definition>
+
+<Theorem title="Extreme Value Theorem">
+
+Let $X$ be a compact metric space and let $f : X \to \mathbb{R}$ be continuous. Then $f$ attains a maximum and a minimum on $X$.
+
+</Theorem>
+
+<Proof>
+
+Since $f$ is continuous and $X$ is compact, the image $f(X) \subset \mathbb{R}$ is compact, hence closed and bounded. A closed and bounded subset of $\mathbb{R}$ contains its supremum and infimum, so there exist $x_1, x_2 \in X$ with
+
+$$
+f(x_1) = \sup_{x \in X} f(x), \qquad f(x_2) = \inf_{x \in X} f(x).
+$$
+
+</Proof>
+
+<Example title="A non-example">
+
+The function $f(x) = 1/x$ on $(0,1)$ is continuous but attains neither a maximum nor a minimum, since $(0,1)$ is not compact.
+
+</Example>
+
+## Remarks
+
+Inline mathematics also renders cleanly, for instance $\|x - y\| \le \|x\| + \|y\|$, and larger displayed expressions such as
+
+$$
+\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
+$$
+
+stay legible on mobile screens thanks to horizontal scrolling on overflow.
